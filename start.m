@@ -5,7 +5,7 @@ N = 40;
 r = 0.5;
 T = 1 + r; R = 1; P = 0; S = 0;
 K = 0.1; % the param in Femi
-K1 = 0.8; % the param in circumProb
+K1 = 0.1; % the param in circumProb
 neigRadius = 1;
 iter_num = 100;
 
@@ -44,7 +44,7 @@ end
 
 fq_coop = fq_coop / (N * N);
 figure(2)
-plot(fq_coop)
+plot(fq_coop, 'LineWidth', 2)
 title('Proportion of cooperators in each iteration')
 
 figure(3)
