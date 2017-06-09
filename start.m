@@ -1,11 +1,10 @@
-clc
-clear
+
 
 N = 40;
-r = 0.5;
+r = 0.05;
 T = 1 + r; R = 1; P = 0; S = 0;
 K = 0.1; % the param in Femi
-K1 = 0.1; % the param in circumProb
+K1 = 0.5; % the param in circumProb
 neigRadius = 1;
 iter_num = 100;
 
@@ -26,7 +25,7 @@ PaysMatrix = Play( StrasMatrix, PayoffMatr, neigRadius );
 % accept
 accept_rate = zeros(1, iter_num);
 
-fq_coop = zeros(iter_num);
+fq_coop = zeros(1, iter_num);
 
 for i = 1:iter_num
     tic
