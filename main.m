@@ -2,7 +2,7 @@ clear
 clc
 
 N = 40;
-K1 = 0 : 0.02 : 0.1; % the param in circumProb
+K1 = 0 : 0.1 : 1; % the param in circumProb
 R = 1; P = 0; S = 0;
 T = 1.01 : 0.05 : 1.51;
 K = 0.1; % the param in Femi
