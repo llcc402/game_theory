@@ -1,10 +1,10 @@
 
-N = 40;
+N = 100;
 T = 1.05; R = 1; P = 0; S = 0;
 K = 0.1; % the param in Femi
 K1 = 0.5; % the param in circumProb
 neigRadius = 1;
-iter_num = 300;
+iter_num = 1000;
 
 % 初始化策略矩�?
 StrasMatrix = initStrasMatrix( N );
@@ -37,9 +37,9 @@ end
 
 
 fq_coop = fq_coop / (N * N);
-figure(2)
-plot(fq_coop, 'LineWidth', 2)
-title('Proportion of cooperators in each iteration')
+% figure(2)
+% plot(fq_coop, 'LineWidth', 2)
+% title('Proportion of cooperators in each iteration')
 
 % figure(3)
 % DrawStraMatrix(StrasMatrix)
